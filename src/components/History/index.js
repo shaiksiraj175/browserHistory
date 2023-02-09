@@ -141,7 +141,7 @@ class History extends Component {
         </div>
         <div className="app-container">
           <ul className="history-container">
-            {isShow ? (
+            {searchResults.length === 0 ? (
               <p className="error">There is no history to show</p>
             ) : (
               searchResults.map(eachHistory => (
